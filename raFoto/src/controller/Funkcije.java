@@ -1,6 +1,10 @@
+package controller;
+
+import java.awt.image.BufferedImage;
+import java.awt.image.WritableRaster;
 
 public class Funkcije {
-BufferedImage slika=Util.loadImage("doge.png");
+BufferedImage slika=util.Util.loadImage("doge.png");
 	
 
 	public void flip(BufferedImage slika){
@@ -101,9 +105,9 @@ BufferedImage slika=Util.loadImage("doge.png");
 				}
 				
 				
-				pixel[0] = saturate(pixel[0]);
-				pixel[1] = saturate(pixel[1]);
-				pixel[2] = saturate(pixel[2]);
+//				pixel[0] = saturate(pixel[0]);
+//				pixel[1] = saturate(pixel[1]);
+//				pixel[2] = saturate(pixel[2]);
 				
 				target.setPixel(x, y, pixel);
 			}
